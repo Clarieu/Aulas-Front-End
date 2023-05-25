@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Aritméticas em JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Operações Aritméticas em JavaScript</h1>
+        <p class="bold">Vou descrever as operações aritméticas realizadas na aula do Prof. Silvano (Awari-front_end):</p>
+
+        <ul>
+            <li>Adição: <code>5 + 3</code> resulta em <code>8</code></li>
+            <li>Subtração: <code>5 - 3</code> resulta em <code>2</code></li>
+            <li>Multiplicação: <code>5 * 3</code> resulta em <code>15</code></li>
+            <li>Divisão: <code>6 / 3</code> resulta em <code>2</code></li>
+            <li>Módulo: <code>7 % 3</code> resulta em <code>1</code></li>
+            <li>Incremento: <code>let x = 5; x++;</code> resulta em <code>x</code> sendo igual a <code>6</code></li>
+            <li>Decremento: <code>let x = 5; x--;</code> resulta em <code>x</code> sendo igual a <code>4</code></li>
+        </ul>
+
+        <p class="bold">Você pode combinar esses operadores para criar expressões mais complexas. Por exemplo, <code>(5 + 3) * 2</code> resulta em <code>16</code>.</p>
+        <p>Alguns exemplos de como usar diferentes operadores aritméticos em JavaScript:</p>
+
+        <ul>
+            <li><code>5 + 3 / 2 * 4</code> resulta em <code>11</code></li>
+            <li><code>(5 + 3) / (2 * 4)</code> resulta em <code>1</code></li>
+            <li><code>5 % 3 + 2</code> resulta em <code>4</code></li>
+            <li><code>(5 % 3) + 2</code> resulta em <code>4</code></li>
+            <li><code>5 + (3 % 2)</code> resulta em <code>6</code></li>
+            <li><code>let x = 5; x *= 3;</code> resulta em <code>x</code> sendo igual a <code>15</code></li>
+            <li><code>let x = 5; x /= 3;</code> resulta em <code>x</code> sendo igual a <code>1.6666666666666667</code></li>
+        </ul>
+
+        <p>O importante é lembrar que a ordem de operações em uma expressão ao usar variáveis faz diferença. Neste caso acima, vimos os parênteses para controlar a ordem das operações.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label for="num1">Número 1:</label>
+                <input type="number" id="num1" aria-label="Número 1" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label for="num2">Número 2:</label>
+                <input type="number" id="num2" aria-label="Número 2" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <button onclick="performOperations()" class="btn btn-primary">Realizar Operações</button>
+            </div>
+        </div>
+        <div class="result">
+            <strong class="bold">Resultado:</strong>
+            <span id="result" aria-live="polite"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
