@@ -1,0 +1,114 @@
+style_artigo_1.css
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Estilo para o corpo do documento */
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 20px;
+  text-align: justify;
+}
+
+/* Estilo para os títulos principais */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilo para as seções de artigos */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: justify;
+}
+
+section {
+  flex: 1 0 300px;
+  background-color: #b0bffd;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Estilo para as imagens dos artigos */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Estilo para os parágrafos dos artigos */
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Estilo para os links dos artigos */
+a {
+  color: #851561;
+  text-decoration: none;
+  text-align: justify;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para tornar as seções acessíveis */
+section:focus {
+  outline: 4px solid #b7efcdf5;
+  padding: 10px;
+}
+
+/* Estilo responsivo para telas menores */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  img {
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    flex: 1 0 100%;
+  }
+}
+
+footer {
+  /* Estilos do rodapé */
+}
+
+footer a {
+  /* Estilos dos links */
+}
