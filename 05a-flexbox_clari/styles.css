@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #8d2473;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.profile {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: rgba(93, 102, 180, 0.121) 0px 8px 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-resume-image-cropper {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-resume-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.profile-resume-username {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: rgb(56, 99, 174);
+}
+
+.profile-bio {
+    margin-bottom: 8px;
+}
+
+.profile-bio-paragraph {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: rgb(42, 26, 26);
+}
+
+.profile-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-nav li {
+    margin: 0 8px;
+}
+
+.profile-nav-link {
+    font-size: 14px;
+    color: rgb(27, 93, 123);
+    text-decoration: none;
+}
