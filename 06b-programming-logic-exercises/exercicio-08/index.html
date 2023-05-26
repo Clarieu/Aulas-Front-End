@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa de Cálculo da Média das Idades</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .idade-input {
+      margin-bottom: 10px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Programa de Cálculo da Média das Idades</h1>
+
+    <form id="formIdades">
+      <div class="idade-input">
+        <label for="idade1">Idade 1:</label>
+        <input type="number" id="idade1" class="idade">
+      </div>
+      <div class="idade-input">
+        <label for="idade2">Idade 2:</label>
+        <input type="number" id="idade2" class="idade">
+      </div>
+      <div class="idade-input">
+        <label for="idade3">Idade 3:</label>
+        <input type="number" id="idade3" class="idade">
+      </div>
+      <div class="idade-input">
+        <label for="idade4">Idade 4:</label>
+        <input type="number" id="idade4" class="idade">
+      </div>
+      <div class="idade-input">
+        <label for="idade5">Idade 5:</label>
+        <input type="number" id="idade5" class="idade">
+      </div>
+
+      <div class="button-container">
+        <button type="button" onclick="calcularMedia()">Calcular Média</button>
+      </div>
+    </form>
+
+    <div id="resultado"></div>
+
+    <a href="../index.html">Voltar</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

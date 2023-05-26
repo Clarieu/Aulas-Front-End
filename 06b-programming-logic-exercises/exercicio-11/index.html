@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Exercício 11</title>
+        <script src="script.js"></script>
+            </head>
+            <body>
+                <h1>Exercício 10</h1>
+                <p>Escreva um programa que lê a altura de um triângulo e imprime-o utilizando asteriscos.</p>
+                <p><i>Veja o resultado abaixo:</i></p>
+                <div id="triangulo"></div>
+                <script>
+                    function criarTriangulo(altura) {
+                      let triangulo = "";
+        
+                      for (let i = 1; i <= altura; i++) {
+                        for (let j = 1; j <= i; j++) {
+                          triangulo += "* ";
+                        }
+                        triangulo += "<br>";
+                      }
+        
+                      return triangulo;
+                    }
+        
+                    const alturaTriangulo = parseInt(prompt("Digite a altura do triângulo:"));
+        
+                    const resultadoTriangulo = criarTriangulo(alturaTriangulo);
+                    document.getElementById("triangulo").innerHTML = resultadoTriangulo;
+                </script>
+            </body>
+        </html>
+        
+        <a href="../index.html">Voltar</a>
+        <script src="script.js"></script>
+    </body>
+</html>

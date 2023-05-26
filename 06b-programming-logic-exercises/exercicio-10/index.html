@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Exercício 10</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Exercício 10</h1>
+        <p>Escreva um programa que lê o tamanho do lado de um quadrado e imprime um quadrado daquele tamanho com asteriscos.</p>
+        <p><i>Veja no console do desenvolvedor a execução do script.</i></p>
+        <a href="../index.html">Voltar</a>
+        <script>
+            function criarQuadrado(tamanho) {
+              let quadrado = "";
+
+              for (let i = 0; i < tamanho; i++) {
+                for (let j = 0; j < tamanho; j++) {
+                  quadrado += "* ";
+                }
+                quadrado += "<br>";
+              }
+
+              return quadrado;
+            }
+
+            const tamanhoLado = parseInt(prompt("Digite o tamanho do lado do quadrado:"));
+
+            const resultado = criarQuadrado(tamanhoLado);
+            document.write(resultado);
+        </script>
+    </body>
+</html>
