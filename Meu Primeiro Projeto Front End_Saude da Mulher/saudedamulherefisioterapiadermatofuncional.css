@@ -1,0 +1,199 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+  }
+  
+  /* Estilos do header */
+  header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input[type="text"],
+  .search button[type="submit"] {
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  /* Estilos dos cards */
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .video-card,
+  .article-card,
+  .image-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .video-thumbnail img,
+  .image-thumbnail img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .video-title,
+  .article-title,
+  .image-title {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .video-description,
+  .article-description,
+  .image-description {
+    color: #777;
+  }
+  
+  .video-button,
+  .article-button,
+  .image-button {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .video-button:hover,
+  .article-button:hover,
+  .image-button:hover {
+    background-color: #ff6347;
+  }
+  
+  /* Estilos dos artigos em flexbox */
+  #artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .article-card {
+    flex-basis: calc(50% - 10px);
+  }
+  
+  /* Estilos das descrições das imagens */
+  .image-description {
+    font-style: italic;
+  }
+  
+  /* Estilos do footer */
+  footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-text {
+    margin: 0;
+    color: #777;
+  }
+  
+  .social-media-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .search {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  
+    .search input[type="text"],
+    .search button[type="submit"] {
+      width: 100%;
+    }
+  
+    .video-card,
+    .article-card,
+    .image-card {
+      width: 100%;
+    }
+  
+    #artigos {
+      justify-content: flex-start;
+    }
+  
+    .article-card {
+      flex-basis: 100%;
+    }
+  }
+  

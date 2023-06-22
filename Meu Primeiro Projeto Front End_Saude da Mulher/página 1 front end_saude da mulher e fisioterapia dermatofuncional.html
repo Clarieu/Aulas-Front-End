@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde da Mulher em Fisioterapia</title>
+  <link rel="stylesheet" href="C:\Users\cllar\Downloads\Aulas_Prof Silvano_Front End_React\Meu Primeiro Projeto Front End_Saude da Mulher, Drenagem e Pre e Pos Operatórios\saudedamulherefisioterapiadermatofuncional.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="logo.png" alt="Logo da Clínica">
+    </div>
+    <div class="search">
+      <label for="search-input" class="visually-hidden">Pesquisar</label>
+      <input type="text" id="search-input" placeholder="Pesquisar">
+      <button type="submit">Buscar</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Formulário</h2>
+      <form id="formulario">
+        <!-- campos do formulário -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <main>
+      <section id="videos">
+        <h2>Vídeos</h2>
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="video1.jpg" alt="Thumbnail do Vídeo 1">
+          </div>
+          <h3 class="video-title">Título do Vídeo 1</h3>
+          <p class="video-description">Descrição do Vídeo 1</p>
+          <p class="video-summary">Resumo do Vídeo 1</p>
+          <a href="#" class="video-button">Assistir</a>
+        </div>
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="video2.jpg" alt="Thumbnail do Vídeo 2">
+          </div>
+          <h3 class="video-title">Título do Vídeo 2</h3>
+          <p class="video-description">Descrição do Vídeo 2</p>
+          <p class="video-summary">Resumo do Vídeo 2</p>
+          <a href="#" class="video-button">Assistir</a>
+        </div>
+        <!-- Adicione mais cartões de vídeo conforme necessário -->
+      </section>
+      
+      <section id="artigos">
+        <h2>Artigos</h2>
+        <div class="article-card">
+          <h3 class="article-title">Título do Artigo 1</h3>
+          <p class="article-description">Descrição do Artigo 1</p>
+          <p class="article-summary">Resumo do Artigo 1</p>
+          <a href="#" class="article-button">Ler mais</a>
+        </div>
+        <div class="article-card">
+          <h3 class="article-title">Título do Artigo 2</h3>
+          <p class="article-description">Descrição do Artigo 2</p>
+          <p class="article-summary">Resumo do Artigo 2</p>
+          <a href="#" class="article-button">Ler mais</a>
+        </div>
+        <!-- Adicione mais cartões de artigo conforme necessário -->
+      </section>
+    </main>
+
+    <section id="imagens">
+      <h2>Imagens</h2>
+      <div class="image-card">
+        <div class="image-thumbnail">
+          <img src="imagem1.jpg" alt="Imagem 1">
+        </div>
+        <h3 class="image-title">Título da Imagem 1</h3>
+        <p class="image-description">Descrição da Imagem 1</p>
+        <a href="#" class="image-button">Ver</a>
+      </div>
+      <div class="image-card">
+        <div class="image-thumbnail">
+          <img src="imagem2.jpg" alt="Imagem 2">
+        </div>
+        <h3 class="image-title">Título da Imagem 2</h3>
+        <p class="image-description">Descrição da Imagem 2</p>
+        <a href="#" class="image-button">Ver</a>
+      </div>
+      <!-- Adicione mais cartões de imagem conforme necessário -->
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-text">&copy; 2023 Nome da Clínica. Todos os direitos reservados.</p>
+      <div class="social-media-icons">
+        <a href="https://www.instagram.com/nome-da-clinica" aria-label="Instagram"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/seu-numero-de-whatsapp" aria-label="WhatsApp"><img src="whatsapp.png" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
